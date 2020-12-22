@@ -2684,6 +2684,7 @@ node_scrape_collector_success{collector="textfile"} 1
 node_scrape_collector_success{collector="thermal_zone"} 1
 node_scrape_collector_success{collector="udp_queues"} 1
 node_scrape_collector_success{collector="vmstat"} 1
+node_scrape_collector_success{collector="vmstat_numa"} 1
 node_scrape_collector_success{collector="wifi"} 1
 node_scrape_collector_success{collector="xfs"} 1
 node_scrape_collector_success{collector="zfs"} 1
@@ -2777,6 +2778,266 @@ node_thermal_zone_temp{type="cpu-thermal",zone="0"} 12.376
 # TYPE node_udp_queues gauge
 node_udp_queues{ip="v4",queue="rx"} 0
 node_udp_queues{ip="v4",queue="tx"} 21
+# HELP node_vmstat_numa_nr_active_anon Virtual memory information field nr_active_anon.
+# TYPE node_vmstat_numa_nr_active_anon gauge
+node_vmstat_numa_nr_active_anon{node="0"} 0
+node_vmstat_numa_nr_active_anon{node="1"} 0
+node_vmstat_numa_nr_active_anon{node="2"} 0
+# HELP node_vmstat_numa_nr_active_file Virtual memory information field nr_active_file.
+# TYPE node_vmstat_numa_nr_active_file gauge
+node_vmstat_numa_nr_active_file{node="0"} 0
+node_vmstat_numa_nr_active_file{node="1"} 0
+node_vmstat_numa_nr_active_file{node="2"} 0
+# HELP node_vmstat_numa_nr_anon_pages Virtual memory information field nr_anon_pages.
+# TYPE node_vmstat_numa_nr_anon_pages gauge
+node_vmstat_numa_nr_anon_pages{node="0"} 0
+node_vmstat_numa_nr_anon_pages{node="1"} 0
+node_vmstat_numa_nr_anon_pages{node="2"} 0
+# HELP node_vmstat_numa_nr_anon_transparent_hugepages Virtual memory information field nr_anon_transparent_hugepages.
+# TYPE node_vmstat_numa_nr_anon_transparent_hugepages gauge
+node_vmstat_numa_nr_anon_transparent_hugepages{node="0"} 0
+node_vmstat_numa_nr_anon_transparent_hugepages{node="1"} 0
+node_vmstat_numa_nr_anon_transparent_hugepages{node="2"} 0
+# HELP node_vmstat_numa_nr_bounce Virtual memory information field nr_bounce.
+# TYPE node_vmstat_numa_nr_bounce gauge
+node_vmstat_numa_nr_bounce{node="0"} 0
+node_vmstat_numa_nr_bounce{node="1"} 0
+node_vmstat_numa_nr_bounce{node="2"} 0
+# HELP node_vmstat_numa_nr_dirtied Virtual memory information field nr_dirtied.
+# TYPE node_vmstat_numa_nr_dirtied gauge
+node_vmstat_numa_nr_dirtied{node="0"} 0
+node_vmstat_numa_nr_dirtied{node="1"} 0
+node_vmstat_numa_nr_dirtied{node="2"} 0
+# HELP node_vmstat_numa_nr_dirty Virtual memory information field nr_dirty.
+# TYPE node_vmstat_numa_nr_dirty gauge
+node_vmstat_numa_nr_dirty{node="0"} 0
+node_vmstat_numa_nr_dirty{node="1"} 0
+node_vmstat_numa_nr_dirty{node="2"} 0
+# HELP node_vmstat_numa_nr_file_hugepages Virtual memory information field nr_file_hugepages.
+# TYPE node_vmstat_numa_nr_file_hugepages gauge
+node_vmstat_numa_nr_file_hugepages{node="0"} 0
+node_vmstat_numa_nr_file_hugepages{node="1"} 0
+node_vmstat_numa_nr_file_hugepages{node="2"} 0
+# HELP node_vmstat_numa_nr_file_pages Virtual memory information field nr_file_pages.
+# TYPE node_vmstat_numa_nr_file_pages gauge
+node_vmstat_numa_nr_file_pages{node="0"} 0
+node_vmstat_numa_nr_file_pages{node="1"} 0
+node_vmstat_numa_nr_file_pages{node="2"} 0
+# HELP node_vmstat_numa_nr_file_pmdmapped Virtual memory information field nr_file_pmdmapped.
+# TYPE node_vmstat_numa_nr_file_pmdmapped gauge
+node_vmstat_numa_nr_file_pmdmapped{node="0"} 0
+node_vmstat_numa_nr_file_pmdmapped{node="1"} 0
+node_vmstat_numa_nr_file_pmdmapped{node="2"} 0
+# HELP node_vmstat_numa_nr_foll_pin_acquired Virtual memory information field nr_foll_pin_acquired.
+# TYPE node_vmstat_numa_nr_foll_pin_acquired gauge
+node_vmstat_numa_nr_foll_pin_acquired{node="0"} 0
+node_vmstat_numa_nr_foll_pin_acquired{node="1"} 0
+node_vmstat_numa_nr_foll_pin_acquired{node="2"} 0
+# HELP node_vmstat_numa_nr_foll_pin_released Virtual memory information field nr_foll_pin_released.
+# TYPE node_vmstat_numa_nr_foll_pin_released gauge
+node_vmstat_numa_nr_foll_pin_released{node="0"} 0
+node_vmstat_numa_nr_foll_pin_released{node="1"} 0
+node_vmstat_numa_nr_foll_pin_released{node="2"} 0
+# HELP node_vmstat_numa_nr_free_cma Virtual memory information field nr_free_cma.
+# TYPE node_vmstat_numa_nr_free_cma gauge
+node_vmstat_numa_nr_free_cma{node="0"} 0
+node_vmstat_numa_nr_free_cma{node="1"} 0
+node_vmstat_numa_nr_free_cma{node="2"} 0
+# HELP node_vmstat_numa_nr_free_pages Virtual memory information field nr_free_pages.
+# TYPE node_vmstat_numa_nr_free_pages gauge
+node_vmstat_numa_nr_free_pages{node="0"} 1
+node_vmstat_numa_nr_free_pages{node="1"} 1
+node_vmstat_numa_nr_free_pages{node="2"} 1
+# HELP node_vmstat_numa_nr_inactive_anon Virtual memory information field nr_inactive_anon.
+# TYPE node_vmstat_numa_nr_inactive_anon gauge
+node_vmstat_numa_nr_inactive_anon{node="0"} 0
+node_vmstat_numa_nr_inactive_anon{node="1"} 0
+node_vmstat_numa_nr_inactive_anon{node="2"} 0
+# HELP node_vmstat_numa_nr_inactive_file Virtual memory information field nr_inactive_file.
+# TYPE node_vmstat_numa_nr_inactive_file gauge
+node_vmstat_numa_nr_inactive_file{node="0"} 0
+node_vmstat_numa_nr_inactive_file{node="1"} 0
+node_vmstat_numa_nr_inactive_file{node="2"} 0
+# HELP node_vmstat_numa_nr_isolated_anon Virtual memory information field nr_isolated_anon.
+# TYPE node_vmstat_numa_nr_isolated_anon gauge
+node_vmstat_numa_nr_isolated_anon{node="0"} 0
+node_vmstat_numa_nr_isolated_anon{node="1"} 0
+node_vmstat_numa_nr_isolated_anon{node="2"} 0
+# HELP node_vmstat_numa_nr_isolated_file Virtual memory information field nr_isolated_file.
+# TYPE node_vmstat_numa_nr_isolated_file gauge
+node_vmstat_numa_nr_isolated_file{node="0"} 0
+node_vmstat_numa_nr_isolated_file{node="1"} 0
+node_vmstat_numa_nr_isolated_file{node="2"} 0
+# HELP node_vmstat_numa_nr_kernel_misc_reclaimable Virtual memory information field nr_kernel_misc_reclaimable.
+# TYPE node_vmstat_numa_nr_kernel_misc_reclaimable gauge
+node_vmstat_numa_nr_kernel_misc_reclaimable{node="0"} 0
+node_vmstat_numa_nr_kernel_misc_reclaimable{node="1"} 0
+node_vmstat_numa_nr_kernel_misc_reclaimable{node="2"} 0
+# HELP node_vmstat_numa_nr_kernel_stack Virtual memory information field nr_kernel_stack.
+# TYPE node_vmstat_numa_nr_kernel_stack gauge
+node_vmstat_numa_nr_kernel_stack{node="0"} 0
+node_vmstat_numa_nr_kernel_stack{node="1"} 0
+node_vmstat_numa_nr_kernel_stack{node="2"} 0
+# HELP node_vmstat_numa_nr_mapped Virtual memory information field nr_mapped.
+# TYPE node_vmstat_numa_nr_mapped gauge
+node_vmstat_numa_nr_mapped{node="0"} 0
+node_vmstat_numa_nr_mapped{node="1"} 0
+node_vmstat_numa_nr_mapped{node="2"} 0
+# HELP node_vmstat_numa_nr_mlock Virtual memory information field nr_mlock.
+# TYPE node_vmstat_numa_nr_mlock gauge
+node_vmstat_numa_nr_mlock{node="0"} 0
+node_vmstat_numa_nr_mlock{node="1"} 0
+node_vmstat_numa_nr_mlock{node="2"} 0
+# HELP node_vmstat_numa_nr_page_table_pages Virtual memory information field nr_page_table_pages.
+# TYPE node_vmstat_numa_nr_page_table_pages gauge
+node_vmstat_numa_nr_page_table_pages{node="0"} 0
+node_vmstat_numa_nr_page_table_pages{node="1"} 0
+node_vmstat_numa_nr_page_table_pages{node="2"} 0
+# HELP node_vmstat_numa_nr_shmem Virtual memory information field nr_shmem.
+# TYPE node_vmstat_numa_nr_shmem gauge
+node_vmstat_numa_nr_shmem{node="0"} 0
+node_vmstat_numa_nr_shmem{node="1"} 0
+node_vmstat_numa_nr_shmem{node="2"} 0
+# HELP node_vmstat_numa_nr_shmem_hugepages Virtual memory information field nr_shmem_hugepages.
+# TYPE node_vmstat_numa_nr_shmem_hugepages gauge
+node_vmstat_numa_nr_shmem_hugepages{node="0"} 0
+node_vmstat_numa_nr_shmem_hugepages{node="1"} 0
+node_vmstat_numa_nr_shmem_hugepages{node="2"} 0
+# HELP node_vmstat_numa_nr_shmem_pmdmapped Virtual memory information field nr_shmem_pmdmapped.
+# TYPE node_vmstat_numa_nr_shmem_pmdmapped gauge
+node_vmstat_numa_nr_shmem_pmdmapped{node="0"} 0
+node_vmstat_numa_nr_shmem_pmdmapped{node="1"} 0
+node_vmstat_numa_nr_shmem_pmdmapped{node="2"} 0
+# HELP node_vmstat_numa_nr_slab_reclaimable Virtual memory information field nr_slab_reclaimable.
+# TYPE node_vmstat_numa_nr_slab_reclaimable gauge
+node_vmstat_numa_nr_slab_reclaimable{node="0"} 0
+node_vmstat_numa_nr_slab_reclaimable{node="1"} 0
+node_vmstat_numa_nr_slab_reclaimable{node="2"} 0
+# HELP node_vmstat_numa_nr_slab_unreclaimable Virtual memory information field nr_slab_unreclaimable.
+# TYPE node_vmstat_numa_nr_slab_unreclaimable gauge
+node_vmstat_numa_nr_slab_unreclaimable{node="0"} 0
+node_vmstat_numa_nr_slab_unreclaimable{node="1"} 0
+node_vmstat_numa_nr_slab_unreclaimable{node="2"} 0
+# HELP node_vmstat_numa_nr_unevictable Virtual memory information field nr_unevictable.
+# TYPE node_vmstat_numa_nr_unevictable gauge
+node_vmstat_numa_nr_unevictable{node="0"} 0
+node_vmstat_numa_nr_unevictable{node="1"} 0
+node_vmstat_numa_nr_unevictable{node="2"} 0
+# HELP node_vmstat_numa_nr_vmscan_immediate_reclaim Virtual memory information field nr_vmscan_immediate_reclaim.
+# TYPE node_vmstat_numa_nr_vmscan_immediate_reclaim gauge
+node_vmstat_numa_nr_vmscan_immediate_reclaim{node="0"} 0
+node_vmstat_numa_nr_vmscan_immediate_reclaim{node="1"} 0
+node_vmstat_numa_nr_vmscan_immediate_reclaim{node="2"} 0
+# HELP node_vmstat_numa_nr_vmscan_write Virtual memory information field nr_vmscan_write.
+# TYPE node_vmstat_numa_nr_vmscan_write gauge
+node_vmstat_numa_nr_vmscan_write{node="0"} 0
+node_vmstat_numa_nr_vmscan_write{node="1"} 0
+node_vmstat_numa_nr_vmscan_write{node="2"} 0
+# HELP node_vmstat_numa_nr_writeback Virtual memory information field nr_writeback.
+# TYPE node_vmstat_numa_nr_writeback gauge
+node_vmstat_numa_nr_writeback{node="0"} 0
+node_vmstat_numa_nr_writeback{node="1"} 0
+node_vmstat_numa_nr_writeback{node="2"} 0
+# HELP node_vmstat_numa_nr_writeback_temp Virtual memory information field nr_writeback_temp.
+# TYPE node_vmstat_numa_nr_writeback_temp gauge
+node_vmstat_numa_nr_writeback_temp{node="0"} 0
+node_vmstat_numa_nr_writeback_temp{node="1"} 0
+node_vmstat_numa_nr_writeback_temp{node="2"} 0
+# HELP node_vmstat_numa_nr_written Virtual memory information field nr_written.
+# TYPE node_vmstat_numa_nr_written gauge
+node_vmstat_numa_nr_written{node="0"} 0
+node_vmstat_numa_nr_written{node="1"} 0
+node_vmstat_numa_nr_written{node="2"} 0
+# HELP node_vmstat_numa_nr_zone_active_anon Virtual memory information field nr_zone_active_anon.
+# TYPE node_vmstat_numa_nr_zone_active_anon gauge
+node_vmstat_numa_nr_zone_active_anon{node="0"} 3
+node_vmstat_numa_nr_zone_active_anon{node="1"} 3
+node_vmstat_numa_nr_zone_active_anon{node="2"} 3
+# HELP node_vmstat_numa_nr_zone_active_file Virtual memory information field nr_zone_active_file.
+# TYPE node_vmstat_numa_nr_zone_active_file gauge
+node_vmstat_numa_nr_zone_active_file{node="0"} 5
+node_vmstat_numa_nr_zone_active_file{node="1"} 5
+node_vmstat_numa_nr_zone_active_file{node="2"} 5
+# HELP node_vmstat_numa_nr_zone_inactive_anon Virtual memory information field nr_zone_inactive_anon.
+# TYPE node_vmstat_numa_nr_zone_inactive_anon gauge
+node_vmstat_numa_nr_zone_inactive_anon{node="0"} 2
+node_vmstat_numa_nr_zone_inactive_anon{node="1"} 2
+node_vmstat_numa_nr_zone_inactive_anon{node="2"} 2
+# HELP node_vmstat_numa_nr_zone_inactive_file Virtual memory information field nr_zone_inactive_file.
+# TYPE node_vmstat_numa_nr_zone_inactive_file gauge
+node_vmstat_numa_nr_zone_inactive_file{node="0"} 0
+node_vmstat_numa_nr_zone_inactive_file{node="1"} 0
+node_vmstat_numa_nr_zone_inactive_file{node="2"} 0
+# HELP node_vmstat_numa_nr_zone_unevictable Virtual memory information field nr_zone_unevictable.
+# TYPE node_vmstat_numa_nr_zone_unevictable gauge
+node_vmstat_numa_nr_zone_unevictable{node="0"} 6
+node_vmstat_numa_nr_zone_unevictable{node="1"} 6
+node_vmstat_numa_nr_zone_unevictable{node="2"} 6
+# HELP node_vmstat_numa_nr_zone_write_pending Virtual memory information field nr_zone_write_pending.
+# TYPE node_vmstat_numa_nr_zone_write_pending gauge
+node_vmstat_numa_nr_zone_write_pending{node="0"} 0
+node_vmstat_numa_nr_zone_write_pending{node="1"} 0
+node_vmstat_numa_nr_zone_write_pending{node="2"} 0
+# HELP node_vmstat_numa_nr_zspages Virtual memory information field nr_zspages.
+# TYPE node_vmstat_numa_nr_zspages gauge
+node_vmstat_numa_nr_zspages{node="0"} 0
+node_vmstat_numa_nr_zspages{node="1"} 0
+node_vmstat_numa_nr_zspages{node="2"} 0
+# HELP node_vmstat_numa_numa_foreign Virtual memory information field numa_foreign.
+# TYPE node_vmstat_numa_numa_foreign gauge
+node_vmstat_numa_numa_foreign{node="0"} 0
+node_vmstat_numa_numa_foreign{node="1"} 0
+node_vmstat_numa_numa_foreign{node="2"} 0
+# HELP node_vmstat_numa_numa_hit Virtual memory information field numa_hit.
+# TYPE node_vmstat_numa_numa_hit gauge
+node_vmstat_numa_numa_hit{node="0"} 0
+node_vmstat_numa_numa_hit{node="1"} 0
+node_vmstat_numa_numa_hit{node="2"} 0
+# HELP node_vmstat_numa_numa_interleave Virtual memory information field numa_interleave.
+# TYPE node_vmstat_numa_numa_interleave gauge
+node_vmstat_numa_numa_interleave{node="0"} 0
+node_vmstat_numa_numa_interleave{node="1"} 0
+node_vmstat_numa_numa_interleave{node="2"} 0
+# HELP node_vmstat_numa_numa_local Virtual memory information field numa_local.
+# TYPE node_vmstat_numa_numa_local gauge
+node_vmstat_numa_numa_local{node="0"} 0
+node_vmstat_numa_numa_local{node="1"} 0
+node_vmstat_numa_numa_local{node="2"} 0
+# HELP node_vmstat_numa_numa_miss Virtual memory information field numa_miss.
+# TYPE node_vmstat_numa_numa_miss gauge
+node_vmstat_numa_numa_miss{node="0"} 0
+node_vmstat_numa_numa_miss{node="1"} 0
+node_vmstat_numa_numa_miss{node="2"} 0
+# HELP node_vmstat_numa_numa_other Virtual memory information field numa_other.
+# TYPE node_vmstat_numa_numa_other gauge
+node_vmstat_numa_numa_other{node="0"} 0
+node_vmstat_numa_numa_other{node="1"} 0
+node_vmstat_numa_numa_other{node="2"} 0
+# HELP node_vmstat_numa_workingset_activate Virtual memory information field workingset_activate.
+# TYPE node_vmstat_numa_workingset_activate gauge
+node_vmstat_numa_workingset_activate{node="0"} 0
+node_vmstat_numa_workingset_activate{node="1"} 0
+node_vmstat_numa_workingset_activate{node="2"} 0
+# HELP node_vmstat_numa_workingset_nodereclaim Virtual memory information field workingset_nodereclaim.
+# TYPE node_vmstat_numa_workingset_nodereclaim gauge
+node_vmstat_numa_workingset_nodereclaim{node="0"} 0
+node_vmstat_numa_workingset_nodereclaim{node="1"} 0
+node_vmstat_numa_workingset_nodereclaim{node="2"} 0
+# HELP node_vmstat_numa_workingset_nodes Virtual memory information field workingset_nodes.
+# TYPE node_vmstat_numa_workingset_nodes gauge
+node_vmstat_numa_workingset_nodes{node="0"} 0
+node_vmstat_numa_workingset_nodes{node="1"} 0
+node_vmstat_numa_workingset_nodes{node="2"} 0
+# HELP node_vmstat_numa_workingset_refault Virtual memory information field workingset_refault.
+# TYPE node_vmstat_numa_workingset_refault gauge
+node_vmstat_numa_workingset_refault{node="0"} 0
+node_vmstat_numa_workingset_refault{node="1"} 0
+node_vmstat_numa_workingset_refault{node="2"} 0
+# HELP node_vmstat_numa_workingset_restore Virtual memory information field workingset_restore.
+# TYPE node_vmstat_numa_workingset_restore gauge
+node_vmstat_numa_workingset_restore{node="0"} 0
+node_vmstat_numa_workingset_restore{node="1"} 0
+node_vmstat_numa_workingset_restore{node="2"} 0
 # HELP node_vmstat_oom_kill /proc/vmstat information field oom_kill.
 # TYPE node_vmstat_oom_kill untyped
 node_vmstat_oom_kill 0
